@@ -7,7 +7,7 @@ with open('students.csv', encoding='utf8') as file:
     answer = list(reader)
     answer = answer[1:]
 
-used_passwords = set()
+used_passwords = {''}
 
 with open('students_password.csv', 'w', encoding='utf8', newline='') as file:
     write = csv.writer(file)
