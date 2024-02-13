@@ -40,5 +40,5 @@ with open('students (1).csv', encoding='utf8') as file:
 
 with open('students_password (new).csv', 'w', encoding='utf8', newline='') as file:
     write = csv.writer(file)
-    itog = write.writerows(answer)
+    write.writerows(answer)
 
