@@ -1,6 +1,3 @@
-import csv
-
-
 def f(n, m, t, xd, yd):
     if n > 5:
         x = n + xd
@@ -28,6 +25,6 @@ with open('space.txt', encoding='utf8') as file:
             sp[2] = str(x) + ' ' + str(y)
         answer.append(sp)
 
-with open('space_new.csv', 'w', encoding='utf8', newline='') as file:
-    write = csv.writer(file)
-    write.writerows(answer)
+with open('space_new.txt', 'w', encoding='utf8', newline='') as file:
+    for i in answer:
+        file.write('*'.join(j for j in i) + '\n')
